@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>图文、电话订单详情页优化</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/图文、电话订单详情页优化/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/图文、电话订单详情页优化/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (水准线) -->
+      <div id="u3572" class="ax_default line">
+        <img id="u3572_img" class="img " src="images/医生绩效考核列表/u365.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3573" class="ax_default label">
+        <div id="u3573_div" class=""></div>
+        <div id="u3573_text" class="text ">
+          <p><span>需求描述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3574" class="ax_default _文本段落">
+        <div id="u3574_div" class=""></div>
+        <div id="u3574_text" class="text ">
+          <p><span>对“财务统计-- 销售订单明细表-详情页面”进行优化。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水准线) -->
+      <div id="u3575" class="ax_default line">
+        <img id="u3575_img" class="img " src="images/医生绩效考核列表/u365.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3576" class="ax_default label">
+        <div id="u3576_div" class=""></div>
+        <div id="u3576_text" class="text ">
+          <p><span>用例描述</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3577" class="ax_default _文本段落">
+        <div id="u3577_div" class=""></div>
+        <div id="u3577_text" class="text ">
+          <p style="font-size:16px;"><span>&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </span><span style="font-size:18px;">N1 电话、图文咨询详情优化</span></p><p style="font-size:16px;"><span>N0010&nbsp; 图文、电话咨询类型订单详情页，支付状态为“已付款”的订单，新增“退款”按钮，其它类型订单详情页不展示此按钮；</span></p><p style="font-size:16px;"><span>N0020&nbsp; 点击按钮后弹出设退款原因对话框，如下原型所示：</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3578" class="ax_default box_1">
+        <div id="u3578_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (多行文字框) -->
+      <div id="u3579" class="ax_default text_area">
+        <textarea id="u3579_input"></textarea>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3580" class="ax_default label">
+        <div id="u3580_div" class=""></div>
+        <div id="u3580_text" class="text ">
+          <p><span>请输入退款原因</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3581" class="ax_default primary_button">
+        <div id="u3581_div" class=""></div>
+        <div id="u3581_text" class="text ">
+          <p><span>提交</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3582" class="ax_default label">
+        <div id="u3582_div" class=""></div>
+        <div id="u3582_text" class="text ">
+          <p><span>100字以内</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3583" class="ax_default _文本段落">
+        <div id="u3583_div" class=""></div>
+        <div id="u3583_text" class="text ">
+          <p><span>N0030&nbsp; 退款原因必填，100字以内；</span></p><p><span>N0040&nbsp; 退款时，如果触发了生成冲减记录的条件，需在医生收支流水记录表生成对应的冲减记录；</span></p><p><span>N0050&nbsp; 退款操作后系统会执行以下动作：</span></p><p><span>a、设置“电话、图文咨询”订单为退款订单，会生成对应的“扣减”记录，扣减摘要为对应输入的“退款原因”；</span></p><p><span>b、对应的“图文咨询”提现中收入记录状态改为“已冲减”；</span></p><p><span>c、自动将此订单关联的状态为“待审核”的提现记录设置为拒绝状态，拒绝原因为：退款原因备注文案；</span></p><p><span>d、将订单状态改为“已退款”；</span></p><p><span>N0060&nbsp; 如果医生申请的提现已经到账，则退款功能仅改变订单状态为“已退款”。</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片 ) -->
+      <div id="u3584" class="ax_default image">
+        <img id="u3584_img" class="img " src="images/图文、电话订单详情页优化/u3584.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u3585" class="ax_default primary_button">
+        <div id="u3585_div" class=""></div>
+        <div id="u3585_text" class="text ">
+          <p><span>退款</span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
